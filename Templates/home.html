@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="add" method="POST">
+    {% csrf_token %}
+    Enter first number: <input type="text" maxlength="2" name="fn">
+    <br>
+    Enter the second mumber: <input type="text" maxlength="2" name="sn">
+    <br>
+    <input type="submit">
+</form>
+{% endblock %}
