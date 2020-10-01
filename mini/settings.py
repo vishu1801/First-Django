@@ -121,6 +121,7 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
+# path for django 3.1 is edited in comments you can use it also instead of os
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS=[
@@ -128,7 +129,7 @@ STATICFILES_DIRS=[
     # BASE_DIR / 'static',
 ]
 
-STATIC_ROOT=os.path.join(BASE_DIR,'assets')
+STATIC_ROOT=os.path.join(BASE_DIR,'assets') # BASE_DIR / 'assets'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR,'media') # BASE_DIR / 'media',
+MEDIA_ROOT = os.path.join(BASE_DIR,'media') # BASE_DIR / 'media'
